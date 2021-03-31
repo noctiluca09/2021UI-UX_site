@@ -57,50 +57,73 @@
 .container .textWrap h2 span{font-weight: bold;}
 .container .textWrap .btn { width: 168px; height: 40px;background: #8f8f8f; padding: 15px 35px; }
 /* ----------------------------1st box----------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(1){width: 75%;position: relative;box-sizing: border-box;}
+#contentsWrap .container > ul >li:nth-child(1){width: 75%;position: relative;}
 
-.container .slider .textWrap {position: absolute;bottom: 80px;left: 88px;}
-.container .slider .textWrap h2 {color: #1651b7;font-size: 70px;width: 300px;letter-spacing: -8px;}
-.container .slider .textWrap h2 span{font-weight: bold;}
+.container .cBox00 .slider .textWrap {position: absolute;bottom: 80px;left: 88px;}
+.container .cBox00 .slider .textWrap h2 {color: #1651b7;font-size: 70px;width: 300px;letter-spacing: -8px;}
+.container .cBox00 .slider .textWrap h2 span{font-weight: bold;}
 
-.slider .textWrap .btn {background: #00163b;}
-.slider .textWrap .btn:hover {background: #1651b7;}
+.cBox00 .slider .textWrap .btn {background: #00163b;}
+.cBox00 .slider .textWrap .btn:hover {background: #1651b7;}
 
 .container .prevBtn {left: 0px;}
 .container .nextBtn {right: 0; transform: scaleX(-1);}
 .container .nextBtn,
 .container .prevBtn {width: 55px;height: 70px; position: absolute; top: 80%;}
+.container .nextBtn:hover,
+.container .prevBtn:hover {cursor: pointer;}
 
-.bx-wrapper .bx-pager {padding-bottom: 70px;}
-.bx-wrapper .bx-pager.bx-default-pager a{background: #535353;}
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus{ background: #0144af;}
+.cBox00 .bx-wrapper .bx-pager {padding-bottom: 70px;}
+.cBox00 .bx-wrapper .bx-pager.bx-default-pager a{background: #535353;}
+.cBox00 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.cBox00 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.cBox00 .bx-wrapper .bx-pager.bx-default-pager a:focus{ background: #0144af;}
 /* -----------------------------2nd box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(2) {background: url(../images/level1-2.png)no-repeat;height: 450px;}
 .container .cBox1 .textWrap {width: 230px; padding-top:45px; margin: 0 auto; letter-spacing: -3px;}
 .container .cBox1 .textWrap h2 {font-size: 38px;font-weight:100;}
 .cBox1 .textWrap .btn {background: rgba(54, 37, 17, 0.78);border: 1px solid #fff;}
+.cBox1 .textWrap .btn:hover {background: rgba(168, 116, 54, 0.77);}
 /* -----------------------------3rd box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(3) {background: #00163b;}
+.container .cBox2 h3,
+.container .cBox3 h3,
+.container .cBox4 h3{font-weight:bolder;padding: 12px;font-size: 28px;}
+.container .cBox2 ul {display: flex;margin-top: 10px;justify-content: center}
+.container .cBox2 ul li {float: left;width: calc(90% / 3 );text-align: center;}
+
 /* -----------------------------4th box---------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(4) {background: #1651b7;}
+#contentsWrap .container > ul >li:nth-child(4) {background:url(../images/tmp.png);}
+.container table {width: 88%;margin: 0 auto;font-size: 13px;line-height: 33px;border-top: 2px solid white;mt5}
 /* -----------------------------5th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(5) {background: #fff;}
+.container .cBox4 h3,
+.container .cBox4 p {color: #00173b;}
+.container .cBox4 .box4Wrap {width: 88%;  margin: 0 auto;position: relative;}
+.container .cBox4 .article {display: block;}
+.container .cBox4 .article img {float: left;width: 45%;}
+.container .cBox4 .article p {float: right;font-size: 15px;width: 52%;}
+.container .cBox4 .snsBox {float: right; padding-top: 25px;}
+
 /* -----------------------------6th box---------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(6) {background: url(../images/level2-4.png)no-repeat;}
+#contentsWrap .container > ul >li:nth-child(6) {background: url(../images/level2-4.png)no-repeat;position: relative;}
+.container .cBox5 .textBox5{position: absolute;width: 100%;text-align: center;background: rgba(0, 0, 0, 0.62);bottom: 0;height: 50px;line-height: 50px;}
+.container .cBox5 .textBox5 a{font-size: 19px;font-weight: bold;}
 /* -----------------------------7th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(7) {background: url(../images/level3-1.png)no-repeat;}
+#contentsWrap .container > ul >li:nth-child(7):hover {cursor: pointer;}
 /* -----------------------------8th box---------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(8) {width: 75%; background: url(../images/level3-2.png)no-repeat;}
+#contentsWrap .container > ul >li:nth-child(8) {width: 75%;position: relative;overflow: hidden;}
 
-/*
+.cBox6 .textWrap {color: #f74237 ;position: absolute;top: 10%;left: 3%;font-size: 28px;}
+.cBox6 .textWrap h2 {font-weight: bolder; font-size: 60px;}
+.cBox6 .textWrap .btn {border: 1px solid #fff; background: rgba(232, 13, 0, 0.6);font-size: 16px;}
+.cBox6 .textWrap .btn:hover {background:rgba(255, 114, 106, 0.6); }
 
-		.level2 .level2-1 {}
-		.level2 .level2-2 {}
-		.level2 .level2-3 {}
-		.level2 .level2-4
-		.level3 {height: 225px;}
-		.level3 .level3-1 {width: 25%; float: left;}
-		.level3 .level3-2 {;float: left;}
-*/
+.cBox6 .bx-wrapper .bx-pager {position: absolute;top: 1px;text-align: right;right: 40px;width:100px;}
+.cBox6 .bx-wrapper .bx-pager.bx-default-pager a{background: #535353;}
+.cBox6 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.cBox6 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.cBox6 .bx-wrapper .bx-pager.bx-default-pager a:focus{ background: #f74237;}
+
+---------------------------------------------------------------------------
