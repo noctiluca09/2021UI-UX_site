@@ -117,7 +117,7 @@
 
 .cBox6 .textWrap {color: #f74237 ;position: absolute;top: 10%;left: 3%;font-size: 28px;}
 .cBox6 .textWrap h2 {font-weight: bolder; font-size: 60px;}
-.cBox6 .textWrap .btn {border: 1px solid #fff; background: rgba(232, 13, 0, 0.6);font-size: 16px;}
+.cBox6 .textWrap .btn {margin-top: 20px;border: 1px solid #fff; background: rgba(232, 13, 0, 0.6);font-size: 16px;}
 .cBox6 .textWrap .btn:hover {background:rgba(255, 114, 106, 0.6); }
 
 .cBox6 .bx-wrapper .bx-pager {position: absolute;top: 1px;text-align: right;right: 40px;width:100px;}
