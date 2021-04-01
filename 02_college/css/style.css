@@ -92,6 +92,7 @@
 .container .cBox4 h3{font-weight:bolder;padding: 12px;font-size: 28px;}
 .container .cBox2 ul {display: flex;margin-top: 10px;justify-content: center}
 .container .cBox2 ul li {float: left;width: calc(90% / 3 );text-align: center;}
+#section .container .cBox2 ul li:hover p {opacity: .7;}
 /* -----------------------------4th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(4) {background:url(../images/tmp.png);}
 .container table {width: 88%;margin: 0 auto;font-size: 13px;line-height: 33px;border-top: 2px solid white;}
@@ -140,7 +141,7 @@
 #footer .footWrap .footText {float: left; width: 846px; overflow: hidden; }
 #footer .footWrap .footText ul li {display: inline-block ;position: relative;margin: 0 15px 15px 15px;}
 #footer .footWrap .footText ul li a {color: #444;}
-
+#footer .footWrap .footText ul li a:hover {color: #959595;}
 #footer .footWrap .footText ul li:first-child {margin-left: 0;}
 #footer .footWrap .footText ul li:after {content: "";background: #000;width: 1px;height: 13px;position: absolute;top: 5px;right: -20px;}
 #footer .footText p {font-size: 12px; color: #878787;}
