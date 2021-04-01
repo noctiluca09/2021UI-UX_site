@@ -108,11 +108,13 @@
 
 /* -----------------------------6th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(6) {background: url(../images/level2-4.png)no-repeat;position: relative;}
-.container .cBox5 .textBox5{position: absolute;width: 100%;text-align: center;background: rgba(0, 0, 0, 0.62);bottom: 0;height: 50px;line-height: 50px;}
-.container .cBox5 .textBox5 a{font-size: 19px;font-weight: bold;}
+.container .cBox5 .textBox5{position: absolute;width: 100%;text-align: center;background: rgba(0, 0, 0, 0.62);bottom: 0;height: 50px;line-height: 50px;transition: all 0.3s}
+.container .cBox5 .textBox5 a{font-size: 19px;font-weight: bold;transition: all 0.3s}
+.container .cBox5:hover .textBox5 {height: 100%;}
+.container .cBox5:hover .textBox5 a {line-height: 225px;}
 /* -----------------------------7th box---------------------------------------- */
-/* #contentsWrap .container > ul >li:nth-child(7) {background: url(../images/level3-1.png)no-repeat;} */
 #contentsWrap .container > ul >li:nth-child(7):hover {cursor: pointer;}
+#contentsWrap .container > ul >li:nth-child(7):hover img {filter:brightness(.6);transition:.3s}
 /* -----------------------------8th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(8) {width: 75%;position: relative;overflow: hidden;}
 
