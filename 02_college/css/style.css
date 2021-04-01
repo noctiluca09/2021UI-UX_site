@@ -110,7 +110,7 @@
 .container .cBox5 .textBox5{position: absolute;width: 100%;text-align: center;background: rgba(0, 0, 0, 0.62);bottom: 0;height: 50px;line-height: 50px;}
 .container .cBox5 .textBox5 a{font-size: 19px;font-weight: bold;}
 /* -----------------------------7th box---------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(7) {background: url(../images/level3-1.png)no-repeat;}
+/* #contentsWrap .container > ul >li:nth-child(7) {background: url(../images/level3-1.png)no-repeat;} */
 #contentsWrap .container > ul >li:nth-child(7):hover {cursor: pointer;}
 /* -----------------------------8th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(8) {width: 75%;position: relative;overflow: hidden;}
