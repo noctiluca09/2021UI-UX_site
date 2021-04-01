@@ -5,7 +5,7 @@
 		#header {width: 100%;}
 		#header .topHead {background: #0044af;}
 		#header .container {width: 1200px; margin: 0 auto;position: relative;}
-		.topHead .menuLeft li{display: inline-block;width: 120px;float: left;padding: 12px 0;text-align: center;font-weight: bold;}
+		.topHead .menuLeft li { display: inline-block;width: 120px;float: left;padding: 12px 0;text-align: center;font-weight: bold;margin-right: 5px;}
 
 		#header .menuLeft li:nth-child(1) a,
 		.topHead .menuLeft li:nth-child(2):hover a,
@@ -94,7 +94,8 @@
 
 /* -----------------------------4th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(4) {background:url(../images/tmp.png);}
-.container table {width: 88%;margin: 0 auto;font-size: 13px;line-height: 33px;border-top: 2px solid white;mt5}
+.container table {width: 88%;margin: 0 auto;font-size: 13px;line-height: 33px;border-top: 2px solid white;}
+.container table tr:before {content:"·";margin-right: 5px;}
 /* -----------------------------5th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(5) {background: #fff;}
 .container .cBox4 h3,
@@ -116,8 +117,8 @@
 #contentsWrap .container > ul >li:nth-child(8) {width: 75%;position: relative;overflow: hidden;}
 
 .cBox6 .textWrap {color: #f74237 ;position: absolute;top: 10%;left: 3%;font-size: 28px;}
-.cBox6 .textWrap h2 {font-weight: bolder; font-size: 60px;}
-.cBox6 .textWrap .btn {margin-top: 20px;border: 1px solid #fff; background: rgba(232, 13, 0, 0.6);font-size: 16px;}
+.cBox6 .textWrap h2 {font-weight: bolder; font-size: 60px;padding-bottom: 10px;}
+.cBox6 .textWrap .btn {border: 1px solid #fff; background: rgba(232, 13, 0, 0.6);font-size: 16px;}
 .cBox6 .textWrap .btn:hover {background:rgba(255, 114, 106, 0.6); }
 
 .cBox6 .bx-wrapper .bx-pager {position: absolute;top: 1px;text-align: right;right: 40px;width:100px;}
@@ -126,4 +127,14 @@
 .cBox6 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .cBox6 .bx-wrapper .bx-pager.bx-default-pager a:focus{ background: #f74237;}
 
-/* --------------------------------------------------------------------------- */
+/* --------------------FOOTER------------------------------------------------------- */
+#footer {width: 100%;background: #fff;}
+#footer .footWrap {width: 1200px;margin: 0 auto;}
+#footer .footWrap .logo {float: left;opacity: 0;margin: 30px 45px;}
+#footer .footWrap .footText {float: left; width: 846px; overflow: hidden; }
+#footer .footWrap .footText ul li {display: inline-block ;position: relative;margin: 0 15px 15px 15px;}
+#footer .footWrap .footText ul li a {color: #444;}
+
+#footer .footWrap .footText ul li:first-child {margin-left: 0;}
+#footer .footWrap .footText ul li:after {content: "";background: #000;width: 1px;height: 13px;position: absolute;top: 5px;right: -20px;}
+#footer .footText p {font-size: 12px; color: #878787;}
