@@ -53,37 +53,38 @@
 		#section .iconBox {float: right;}
 		#section .iconBox li{display: inline-block;padding-left: 20px;text-align: center;}
 /*		------------------CONTENT SECTION--------------------------------------*/
-#contentsWrap .container > ul >li{float: left;width: 25%;height: 225px;}
-.container .textWrap h2 span{font-weight: bold;}
-.container .textWrap .btn { width: 168px; height: 40px;background: #8f8f8f; padding: 15px 35px; }
+		#contentsWrap .container > ul >li{float: left;width: 25%;height: 225px;}
+		.container .textWrap h2 span{font-weight: bold;}
+		.container .textWrap .btn { width: 168px; height: 40px;background: #8f8f8f; padding: 15px 35px; }
 /* ----------------------------1st box----------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(1){width: 75%;position: relative;}
+		#contentsWrap .container > ul >li:nth-child(1){width: 75%;position: relative;}
 
-.container .cBox00 .slider .textWrap {position: absolute;bottom: 80px;left: 88px;}
-.container .cBox00 .slider .textWrap h2 {color: #1651b7;font-size: 70px;width: 300px;letter-spacing: -8px;}
-.container .cBox00 .slider .textWrap h2 span{font-weight: bold;}
+		.container .cBox00 .slider .textWrap {position: absolute;bottom: 80px;left: 88px;}
+		.container .cBox00 .slider .textWrap h2 {color: #1651b7;font-size: 70px;width: 300px;letter-spacing: -8px;}
+		.container .cBox00 .slider .textWrap h2 span{font-weight: bold;}
 
-.cBox00 .slider .textWrap .btn {background: #00163b;}
-.cBox00 .slider .textWrap .btn:hover {background: #1651b7;}
+		.cBox00 .slider .textWrap .btn {background: #00163b;}
+		.cBox00 .slider .textWrap .btn:hover {background: #1651b7;}
 
-.container .prevBtn {left: 0px;}
-.container .nextBtn {right: 0; transform: scaleX(-1);}
-.container .nextBtn,
-.container .prevBtn {width: 55px;height: 70px; position: absolute; top: 80%;}
-.container .nextBtn:hover,
-.container .prevBtn:hover {cursor: pointer;}
+		.container .prevBtn {left: 0px;}
+		.container .nextBtn {right: 0; transform: scaleX(-1);}
+		.container .nextBtn,
+		.container .prevBtn {width: 55px;height: 70px; position: absolute; top: 80%;}
+		.container .nextBtn:hover,
+		.container .prevBtn:hover {cursor: pointer;}
 
-.cBox00 .bx-wrapper .bx-pager {padding-bottom: 70px;}
-.cBox00 .bx-wrapper .bx-pager.bx-default-pager a{background: #535353;}
-.cBox00 .bx-wrapper .bx-pager.bx-default-pager a:hover,
-.cBox00 .bx-wrapper .bx-pager.bx-default-pager a.active,
-.cBox00 .bx-wrapper .bx-pager.bx-default-pager a:focus{ background: #0144af;}
+		.cBox00 .bx-wrapper .bx-pager {padding-bottom: 70px;}
+		.cBox00 .bx-wrapper .bx-pager.bx-default-pager a{background: #535353;}
+		.cBox00 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+		.cBox00 .bx-wrapper .bx-pager.bx-default-pager a.active,
+		.cBox00 .bx-wrapper .bx-pager.bx-default-pager a:focus{ background: #0144af;}
 /* -----------------------------2nd box---------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(2) {background: url(../images/level1-2.png)no-repeat;height: 450px;}
-.container .cBox1 .textWrap {width: 230px; padding-top:45px; margin: 0 auto; letter-spacing: -3px;}
-.container .cBox1 .textWrap h2 {font-size: 38px;font-weight:100;}
-.cBox1 .textWrap .btn {background: rgba(54, 37, 17, 0.78);border: 1px solid #fff;}
-.cBox1 .textWrap .btn:hover {background: rgba(168, 116, 54, 0.77);}
+		#contentsWrap .container > ul >li:nth-child(2) {background: url(../images/level1-2.png)no-repeat;height: 450px;}
+		.container .cBox1 .textWrap {width: 230px; padding-top:45px; margin: 0 auto; letter-spacing: -3px;}
+		.container .cBox1 .textWrap h2 {font-size: 38px;font-weight:100;}
+		.cBox1 .textWrap .btn {background: rgba(54, 37, 17, 0.78);border: 1px solid #fff; letter-spacing: 0px;}
+		.cBox1 .textWrap .btn:hover {background: rgba(168, 116, 54, 0.77);}
+
 /* -----------------------------3rd box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(3) {background: #00163b;}
 .container .cBox2 h3,
@@ -91,11 +92,11 @@
 .container .cBox4 h3{font-weight:bolder;padding: 12px;font-size: 28px;}
 .container .cBox2 ul {display: flex;margin-top: 10px;justify-content: center}
 .container .cBox2 ul li {float: left;width: calc(90% / 3 );text-align: center;}
-
 /* -----------------------------4th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(4) {background:url(../images/tmp.png);}
 .container table {width: 88%;margin: 0 auto;font-size: 13px;line-height: 33px;border-top: 2px solid white;}
 .container table tr:before {content:"·";margin-right: 5px;}
+#section .container .cBox3 table tr a:hover {color: #ddd;}
 /* -----------------------------5th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(5) {background: #fff;}
 .container .cBox4 h3,
@@ -104,11 +105,14 @@
 .container .cBox4 .article {display: block;}
 .container .cBox4 .article img {float: left;width: 45%;}
 .container .cBox4 .article p {float: right;font-size: 15px;width: 52%;}
+.container .cBox4 .article:hover p {color: #999;}
+.container .cBox4 .article:hover img {opacity: .7;}
 .container .cBox4 .snsBox {float: right; padding-top: 25px;}
 
 /* -----------------------------6th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(6) {background: url(../images/level2-4.png)no-repeat;position: relative;}
-.container .cBox5 .textBox5{position: absolute;width: 100%;text-align: center;background: rgba(0, 0, 0, 0.62);bottom: 0;height: 50px;line-height: 50px;transition: all 0.3s}
+.container .cBox5 > .textBox5{position: absolute;width: 100%;text-align: center;background: rgba(0, 0, 0, 0.62);bottom: 0;height: 50px;line-height: 50px;transition: all 0.3s}
+
 .container .cBox5 .textBox5 a{font-size: 19px;font-weight: bold;transition: all 0.3s}
 .container .cBox5:hover .textBox5 {height: 100%;}
 .container .cBox5:hover .textBox5 a {line-height: 225px;}
