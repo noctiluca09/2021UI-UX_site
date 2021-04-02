@@ -134,9 +134,10 @@
 .container .cBox5:hover .textBox5 {height: 100%;}
 .container .cBox5:hover .textBox5 a {line-height: 225px;display: block;}
 /* -----------------------------7th box---------------------------------------- */
-#contentsWrap .container > ul >li:nth-child(7) {background:url(../images/level3-1.png)no-repeat;position: relative;padding: 40px;}
+#contentsWrap .container > ul >li:nth-child(7) 
+{background:url(../images/level3-1.png)no-repeat; display: flex;justify-content: center;align-items: center;}
+#contentsWrap .container > ul >li:nth-child(7) a {padding: 80px 120px;}
 #contentsWrap .container > ul >li:nth-child(7):hover {cursor: pointer;}
-#contentsWrap .container > ul >li:nth-child(7) img {display: flex;margin: auto;margin-top: 40px;}
 #contentsWrap .container > ul >li:nth-child(7):hover img {filter:brightness(.6);transition:.3s;}
 /* -----------------------------8th box---------------------------------------- */
 #contentsWrap .container > ul >li:nth-child(8) {width: 75%;position: relative;overflow: hidden;}
