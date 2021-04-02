@@ -6,9 +6,10 @@ html,body
 	text-decoration: none;
 	list-style: none;
 	font-family: ;
+	box-sizing: border-box;
 }
 .clearfix:after {content: ""; clear: both; display: block;}
-
+h3 {color: #fff;}
 .mb5 {margin-bottom: 5px;}
 .mb10 {margin-bottom: 10px;}
 .mb15 {margin-bottom: 15px;}
