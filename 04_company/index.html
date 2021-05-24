@@ -4,32 +4,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>EDIYA COFFEE</title>
 
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="./colorbox.css">
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<script src="js/jquery.colorbox-min.js" charset="utf-8"></script>
 	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
-	<script src="js/script.js" charset="utf-8"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<!--	ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+	<script>
+		$(document).ready(function() {
+			$(".slider").bxSlider({
+				auto: true,
+				pager: true,
+				controls: false
+			});
+
+			$(".toggleMenu").click(function() {
+				const toggle = $(".toggleMenu").attr("class");
+
+				if (toggle == "toggleMenu") {
+					$(".toggleMenu").addClass("change");
+				} else {
+					$(".toggleMenu").removeClass("change");
+				}
+
+				if (toggle == "toggleMenu") {
+					$("#main_menu").css("right", 0);
+				} else {
+					$("#main_menu").css("right", "-400px");
+				};
+
+			});
+		});
+	</script>
 </head>
 
 <body>
 	<header>
 		<div class="hWrap clearfix">
 			<div id="headerTop" class="clearfix">
-				<h1 class="logo"><a href="#">EDIYA COFFEE</a></h1>
+				<a href="#">
+					<h1 class="logo">EDIYA COFFEE</h1>
+				</a>
 				<nav id="main_menu">
 					<ul class="clearfix">
 						<li><a href="#">메뉴</a></li>
 						<li><a href="#">이디야멤버스</a></li>
-						<li><a href="#">기프트카드</a></li>
+						<li><a href="sub_gift.html">기프트카드</a></li>
 						<li><a href="#">이디야커피랩</a></li>
 						<li><a href="#">이디야컬쳐랩</a></li>
 						<li><a href="#">이디야 소식</a></li>
@@ -40,28 +67,21 @@
 					</ul>
 				</nav>
 				<div class="toggleMenu">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
+					<div class="bar1 bar"></div>
+					<div class="bar2 bar"></div>
+					<div class="bar3 bar"></div>
 				</div> <!-- toggleMenu -->
 			</div> <!-- headerTop -->
 		</div> <!-- hWrap -->
-		<div class="sliderWrap">
-			<ul class="slider">
-				<li class="slider1st">
-					<div class="slider_txt">
-						<h3>신상품 안내</h3>
-						<p></p>
-					</div>
-				</li>
-				<li class="slider2st">
-					<div class="slider_txt">
-						<h3>신상품 안내</h3>
-					</div>
-				</li>
-			</ul>
-		</div> <!-- sliderWrap -->
 	</header>
+	<div class="sliderWrap">
+		<ul class="slider">
+			<li class="slider1st"> </li>
+			<li class="slider2st"> </li>
+			<li class="slider3st"> </li>
+			<li class="slider4st"> </li>
+		</ul>
+	</div> <!-- sliderWrap -->
 	<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡheaderㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
 	<div class="content">
 		<ul class="contList clearfix">
@@ -94,6 +114,7 @@
 					<h2>매장찾기</h2>
 					<h4>가까운 이디야 매장을<br> 확인해보세요</h4>
 					<input type="search" name="location" placeholder="FIND A STORE">
+					<button class="btn_search">search</button>
 				</div>
 			</li>
 			<li></li> <!-- 7 -->
@@ -106,7 +127,7 @@
 				<div class="liTxt">
 					<h2 style="font-weight: 100">ALWAYS BESIDE YOU,<span style="font-weight: 900">EDIYA COFFEE</span></h2>
 					<p>늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요.</p>
-					<button><a href="#">메뉴보기</a></button>
+					<div class="btn btn09"><a href="#">메뉴보기</a></div>
 				</div>
 			</li> <!-- 9 -->
 			<li>
@@ -114,9 +135,11 @@
 					<p>공지사항</p>
 				</a>
 			</li>
+			<!--10-->
 			<li>
 				<a href="https://www.youtube.com/embed/nuHjZrfLAzY" class="youtube" title="21영상"></a>
 			</li>
+			<!--11-->
 		</ul>
 	</div> <!-- content -->
 
@@ -132,8 +155,8 @@
 					<div class="card">
 						<img src="images/block03_icon01.png" alt="">
 						<div class="card_body">
-							<h3>Engineering</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, maiores.</p>
+							<h3>이디야 <br> 뮤직 페스타</h3>
+							<p>2011년부터 시작된 '이디야 뮤직페스타'는 2018년 약 1만 명의 고객을 무료로 처청하는 등 매년 업그레이드되고 있습니다.</p>
 						</div>
 					</div>
 				</li>
@@ -141,8 +164,8 @@
 					<div class="card">
 						<img src="images/block03_icon02.png" alt="">
 						<div class="card_body">
-							<h3>Engineering</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, maiores.</p>
+							<h3>컬쳐랩<br> 시설대관</h3>
+							<p>누구나 자유롭게 자신의 재능을 선보일 수 있도록 다양한 Artists들의 장르를 뛰어넘은 무대를 지원합니다.</p>
 						</div>
 					</div>
 				</li>
@@ -150,8 +173,8 @@
 					<div class="card">
 						<img src="images/block03_icon03.png" alt="">
 						<div class="card_body">
-							<h3>Engineering</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, maiores.</p>
+							<h3>이디야<br> 컬쳐랩</h3>
+							<p>고객의 사랑에 보답하기 위해 축제의 장을 지속적으로 마련하며 고객과의 열정을 함께합니다.</p>
 						</div>
 					</div>
 				</li>
@@ -161,49 +184,114 @@
 	</div> <!-- container -->
 	<article class="news">
 		<ul class="newsList clearfix">
+			<li>
+				<h3>가장 특별한 <br>커피연구소</h3>
+				<p>완벽한 커피 한 잔을 위해,<br>
+					최고의 커피 전문가들이 끊임없이<br>
+					연구합니다.
+				</p>
+				<div class="btn">
+					<a href="#">이디야커피랩</a>
+				</div>
+			</li>
 			<li></li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>6</li>
-			<li>7</li>
+			<li><a href="#">엄선된 스페셜티 원두의
+					풍미를 최상으로 끌어낸
+					최고의 커피를
+					경험할 수 있는 공간.
+					<span>MORE ></span></a>
+			</li>
+			<li></li>
+			<li><a href="#">
+					신선한 재료와
+					저온 숙성 공법으로 만든
+					프리미엄 베이커리와
+					정통 프랑스식 디저트 커피와
+					샌드위치의 완벽한 조화를
+					경험하세요.
+					<span>MORE ></span></a>
+			</li>
+			<li></li>
+			<li><a href="#">
+					국내 정상급 바리스타가
+					선보이는 커피연구소의
+					시그니처 음료,
+					그 차이를 느껴보세요.
+					<span>MORE ></span></a>
+			</li>
 		</ul>
 	</article>
 	<article class="column clearfix">
 		<ul class="colList">
 			<li>
-			<div class="wrapT">
-				<div class="wrap1 clearfix">
-					<h4>이디야 소식</h4>
-					<span><br>more></span>
+				<div class="wrapT">
+					<div class="wrap1 clearfix">
+						<h3>이디야 소식</h3>
+						<a href="#"><span><br>more></span></a>
+					</div>
+					<table>
+						<tr>
+							<td><a href="#">21년도 상반기 이디야 메이트 희망기금 안내 </a></td>
+							<td class="date">2021.04.05</td>
+						</tr>
+						<tr>
+							<td><a href="#">EDIYA COFFEE X SUBSUB 2021 다이어리세트<br>상세페이지 ＆ 판매매장리스트</a></td>
+							<td class="date"><br>2020.09.14</td>
+						</tr>
+						<tr>
+							<td><a href="#">2020 이디야 메이트 희망기금 안내</a></td>
+							<td class="date">2020.08.14</td>
+						</tr>
+					</table>
 				</div>
-				<table>
-				
-					<tr>
-						<td><a href="#">21년도 상반기 이디야 메이트 희망기금 안내 </a></td>
-						<td>2021.04.05</td>
-					</tr>
-					<tr>
-						<td><a href="#">EDIYA COFFEE X SUBSUB 2021 다이어리세트<br>상세페이지 ＆ 판매매장리스트</a></td>
-						<td>2020.09.14</td>
-					</tr>
-					<tr>
-						<td><a href="#">2020 이디야 메이트 희망기금 안내</a></td>
-						<td>2020.08.14</td>
-					</tr>
-				</table>
-			</div>
-			<div class="wrapB">
-				<p style="color: white">브로슈어 다운받기<br>→
-				<img src="images/main_brochure_img.png" alt="">
-				</p>
-			</div>
+				<div class="wrapB">
+					<p style="color: white"><a href="#">브로슈어 다운받기
+							<p class="arrow">→</p>
+							<img src="images/main_brochure_img.png" alt="">
+						</a>
+					</p>
+				</div>
 			</li>
-			<li>2</li>
+			<li>
+				<div class="colTxt">
+					<h3>고객과 가맹점주, 협력사의<br>
+						상생의 가치를 실천합시다.</h3>
+					<p>해외에 로열티를 내지 않는 순수한 국내브랜드로<br> 품질좋고 맛있는 정직한 커피를 제공합니다.</p>
+					<div class="btn">
+						<a href="#">창업안내</a>
+					</div>
+					<div class="btn">
+						<a href="#">창업설명회 안내</a>
+					</div>
+					<div class="btn">
+						<a href="#">브랜드소개</a>
+					</div>
+				</div>
+			</li>
 		</ul>
 	</article>
 	<footer>
-		aaa
+		<div class="footWrap">
+			<a href="#">
+				<h1>logo</h1>
+			</a>
+			<div class="fContent">
+				<ul class="clearfix">
+					<li class="active"><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">멤버스 이용약관</a></li>
+					<li><a href="#">가맹 안내</a></li>
+					<li><a href="#">대량쿠폰구매</a></li>
+					<li><a href="#">채용안내</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">점주의 방</a></li>
+				</ul>
+				<p>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17) | TEL : 02-543-6467 | FAX : 02-543-7191
+					<br>
+					사업자등록번호 : 107-86-16302 | 통신판매업 신고 : 강남 제 002519호 | 대표이사 : 문창기
+					<br><br>
+					&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..
+				</p>
+			</div>
+		</div>
 	</footer>
 </body></html>
