@@ -397,6 +397,11 @@
 	}
 	section ul.tab li:hover {background: #fff;color: #474747;}
 	section ul.tab li.active {background: #474747;color: #fff;}
+	
 	.boxWrap>div img{width: 100%;}
+	.boxWrap>div .boxM {display: block;}
+	.boxWrap>div .boxPC {display: none;}
+	
+	.boxWrap>div:nth-child(2){padding: 80px 0;}
 
 }

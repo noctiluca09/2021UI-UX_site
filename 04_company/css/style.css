@@ -825,3 +825,4 @@ section ul.tab li.active {background: #1D326C;color: #fff;}
 	text-align: center;
 }
 .boxWrap>div:first-child {display: block;}
+.boxWrap>div .boxM {display: none;}
