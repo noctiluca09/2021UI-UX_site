@@ -111,6 +111,7 @@
 		position: relative;
 		border-left: 1px solid #777
 	}
+	.content .contList > li:nth-child(5){transition: .6s}
 
 	.content .contList > li:nth-child(6) {
 		background-image: url(../images/block-coffeecup.png);
@@ -381,7 +382,7 @@
 		color: #fff;
 	}
 	section ul.tab li{
-	background: #fff;	
+	background: #fff;
 	width: calc(100%/2);
 	color: #474747;
 	border: 2px solid #474747;
@@ -392,16 +393,16 @@
 	section ul.tab li:nth-child(3),
 	section ul.tab li:nth-child(4)
 	{
-		
+
 	border-bottom: 2px solid #474747;
 	}
 	section ul.tab li:hover {background: #fff;color: #474747;}
 	section ul.tab li.active {background: #474747;color: #fff;}
-	
+
 	.boxWrap>div img{width: 100%;}
 	.boxWrap>div .boxM {display: block;}
 	.boxWrap>div .boxPC {display: none;}
-	
+
 	.boxWrap>div:nth-child(2){padding: 80px 0;}
 
 }

@@ -12,16 +12,18 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
 include_once(G5_LIB_PATH.'/poll.lib.php');
 include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
-include_once(G5_LIB_PATH.'/popular.lib.php');
+// include_once(G5_LIB_PATHZ.'/popular.lib.php');
 ?>
 
 <!-- 상단 시작 { -->
+
+
 <div id="hd">
     <h1 id="hd_h1"><?php echo $g5['title'] ?></h1>
     <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
 
     <?php
-    if(defined('_INDEX_')) { // index에서만 실행
+        if(defined('_INDEX_')) { // index에서만 실행
         include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
     }
     ?>
@@ -36,67 +38,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 		</div>
     </div>
     <div id="hd_wrapper">
-
-
-
-        <div class="hd_sch_wr">
-            <fieldset id="hd_sch">
-                <legend>사이트 내 전체검색</legend>
-                <form name="fsearchbox" method="get" action="<?php echo G5_BBS_URL ?>/search.php" onsubmit="return fsearchbox_submit(this);">
-                <input type="hidden" name="sfl" value="wr_subject||wr_content">
-                <input type="hidden" name="sop" value="and">
-                <label for="sch_stx" class="sound_only">검색어 필수</label>
-                <input type="text" name="stx" id="sch_stx" maxlength="20" placeholder="검색어를 입력해주세요">
-                <button type="submit" id="sch_submit" value="검색"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
-                </form>
-
-                <script>
-                function fsearchbox_submit(f)
-                {
-                    if (f.stx.value.length < 2) {
-                        alert("검색어는 두글자 이상 입력하십시오.");
-                        f.stx.select();
-                        f.stx.focus();
-                        return false;
-                    }
-
-                    // 검색에 많은 부하가 걸리는 경우 이 주석을 제거하세요.
-                    var cnt = 0;
-                    for (var i=0; i<f.stx.value.length; i++) {
-                        if (f.stx.value.charAt(i) == ' ')
-                            cnt++;
-                    }
-
-                    if (cnt > 1) {
-                        alert("빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다.");
-                        f.stx.select();
-                        f.stx.focus();
-                        return false;
-                    }
-
-                    return true;
-                }
-                </script>
-
-            </fieldset>
-
-            <?php echo popular('theme/basic'); // 인기검색어, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?>
-        </div>
-        <ul class="hd_login">
-            <?php if ($is_member) {  ?>
-            <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
-            <li><a href="<?php echo G5_BBS_URL ?>/logout.php">로그아웃</a></li>
-            <?php if ($is_admin) {  ?>
-            <li class="tnb_admin"><a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>">관리자</a></li>
-            <?php }  ?>
-            <?php } else {  ?>
-            <li><a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a></li>
-            <li><a href="<?php echo G5_BBS_URL ?>/login.php">로그인</a></li>
-            <?php }  ?>
-
-        </ul>
     </div>
-
     <nav id="gnb">
         <h2>메인메뉴</h2>
         <div class="gnb_wrap">
@@ -187,7 +129,20 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         </div>
     </nav>
     <script>
+    window.onload = function(){
+      const menuDep = $(".loc1D").html(); //get
+      console.log("현재위치" + menuDep);
+      if(menuDep == "메뉴"){
+        $(".subVisual .txt").html("저희 홈페이지를 찾아주셔서 감사합니다.")
+      }
+      if(menuDep == "개인정보 처리방침"){
+        $(".subVisual .txt").html("방침안내 페이지입니다.")
+      }
+      if(menuDep == "커뮤니티"){
+        $(".subVisual .txt").html("자유롭게 커뮤니티하실수 있는 곳입니다.")
+      }
 
+    };
     $(function(){
         $(".gnb_menu_btn").click(function(){
             $("#gnb_all, #gnb_all_bg").show();
@@ -195,6 +150,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         $(".gnb_close_btn, #gnb_all_bg").click(function(){
             $("#gnb_all, #gnb_all_bg").hide();
         });
+        $(".slider").bxSlider({
+  				auto: true,
+  				pager: true,
+  				controls: false
+  			});
     });
 
     </script>
@@ -202,15 +162,54 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <!-- } 상단 끝 -->
 
 <? if(defined('_INDEX_')){?>
-  <div class="slider01">
+  <div class="slider">
     <img src="<? echo G5_THEME_IMG_URL?>/images/slider-big.jpg" alt="">
   </div>
 <?}?>
 
+
+
 <hr>
+
+
+<? if(defined('_INDEX_')){?>
+  <img src="<? echo G5_THEME_IMG_URL?>/pc01.jpg" alt="">
+<?}?>
+
+<? if(!defined('_INDEX_')){?>
+<div class="subVisual">
+  <div class="subImg " id="page_title">
+    <div class="title">
+      <h2 class="loc1D"></h2>
+      <div class="txt">안녕하세요</div>
+    </div>
+  </div>
+</div>
+<script>
+  window.onload = function(){
+    const menuDep = $(".loc1D").html(); //get
+    console.log("현재위치" + menuDep);
+    if(menuDep == "회사소개"){
+      $(".subVisual .txt").html("저희 홈페이지를 찾아주셔서 감사합니다.")
+    }
+    if(menuDep == "개인정보 처리방침"){
+      $(".subVisual .txt").html("방침안내 페이지입니다.")
+    }
+    if(menuDep == "커뮤니티"){
+      $(".subVisual .txt").html("자유롭게 커뮤니티하실수 있는 곳입니다.")
+    }
+
+  };
+
+
+</script>
+<?}?>
+
 
 <!-- 콘텐츠 시작 { -->
 <div id="wrapper">
+
+</div>
     <div id="container_wr">
 
     <div id="container">

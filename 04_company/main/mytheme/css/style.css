@@ -1,0 +1,50 @@
+
+
+/* ------------------sub--------------- */
+section.titleMenu {
+	width: 100%;
+	background: url(../images/giftcard_intro_visual.jpg);
+}
+
+section .titleWrap {
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 70px;
+}
+section .title_txt h2{margin-bottom: 30px;}
+section .title_txt {margin-bottom: 30px;}
+section .title_txt span{
+	font-weight: bold;
+}
+
+section ul.tab {
+	width: 80%;
+	margin: 0 auto;
+}
+
+section ul.tab li {
+	float: left;
+	width: calc(100%/4);
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	transition: .3s;
+	border: 2px solid #fff;
+	border-right: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+section ul.tab li:last-child {
+	border-right: 2px solid #fff;
+}
+section ul.tab li:hover {background: #fff;color: #1D326C;}
+section ul.tab li.active {background: #1D326C;color: #fff;}
+
+.boxWrap>div {
+	display: none;
+	text-align: center;
+}
+.boxWrap>div:first-child {display: block;}
+.boxWrap>div .boxM {display: none;}
