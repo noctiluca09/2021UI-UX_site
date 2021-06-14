@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#headerWrap .bgcolor{
+  position: absolute;
+  width: 100%;height: 60px;
+}
+.container h3 {color: #fff;}
+.slider {width: 100%;top: 2px;}
+.slider img{width: 100%}
+.slider .row{position: relative;}
+
+#headerWrap .video video{
+  object-fit:fill;width: 100%;
+}
+.adven-title {border-bottom:4px solid var(--primary-color-1);}
+.card-view li{
+  border: 1px solid #000;
+  overflow: hidden;
+}
+.card {overflow: hidden;box-sizing: border-box;}
+.card .card-img {transition: .3s;}
+.card .card-img:hover {transform: scale(1.04);filter: opacity(.5);}
+
+a .jumbotron-fluid {
+  background:var(--third-color);
+  background-image: url(../image/btn_head_eshop.jpg);
+  background-repeat: no-repeat;
+  background-position:45% 45%;
+  background-size: 30%;
+}
+a .jumbotron { color: #fff; display: block;position: relative;}
+
+.jumbotron {
+	background:url(../image/img_switch_device_parent01.jpg)no-repeat;
+	background-color: #f3ece2;
+	background-size:300px;
+	background-position: 15%;
+}

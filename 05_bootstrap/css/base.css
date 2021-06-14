@@ -1,4 +1,14 @@
 @charset "UTF-8";
+
+:root{
+  --primary-color:#e70012;
+  --secondary-color:#ff5483;
+  --third-color:#FE7C0A;
+  --fourth-color:#1cc123;
+  --font-1st:#333;
+  --font-2st:#7d97ad;
+}
+
 @font-face{
   font-family: 'OpenSans-Regular';
   src:url(../font-face/OpenSans-Regular.ttf);
@@ -19,4 +29,8 @@ body{
 li{list-style:none}
 a:link,a:visited{text-decoration:none;color:#333}
 .clearfix:after{content:"";display: block;clear: both;}
-a:hover{color:var(--primary-color) !important}
+.bg-primary,.btn-primary {background:var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+.bg-success {background:var(--fourth-color) !important;}
+.text-muted {color: var(--secondary-color) !important;}

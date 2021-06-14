@@ -1,106 +1,648 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+    <!-- Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    <title>NINTENDO</title>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>::NINTENDO::</title>
   </head>
   <body>
-    <div id="headerWrap" class="mb-5">
-      <div class="bg-color"></div>
-      <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">NINTENDO
-              <!-- img src -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-          </div>
-        </nav>
+    <div class="bg-primary">
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo_nintendo_red.gif" alt="">
+        </a>
 
-        <div class="slider mb-5">
-          <div class="container">
-            <div class="slider-title text-center mb-3">OUR AMAZING COMMUNITY</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="row">
-              <div class="swiper-container col-md-10">
-                <div class="swiper-wrapper">
-                  <!-- #1 -->
-                  <div class="swiper-slide">
-                    <div class="text-center">
-                      <h4>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos minima officia doloribus inventore ipsum nam fugiat delectus, nobis. Non, nesciunt!</h4>
-                      <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                  </div>
-                  <!-- #1 -->
-                  <!-- #2 -->
-                  <div class="swiper-slide">
-                    <div class="text-center">
-                      <h4>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos minima officia doloribus inventore ipsum nam fugiat delectus, nobis. Non, nesciunt!</h4>
-                      <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                  </div>
-                  <!-- #2 -->
-                  <!-- #3 -->
-                  <div class="swiper-slide">
-                    <div class="text-center">
-                      <h4>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos minima officia doloribus inventore ipsum nam fugiat delectus, nobis. Non, nesciunt!</h4>
-                      <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                  </div>
-                  <!-- #3 -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COMPANY</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COMMUNITY</a>
+            </li>
 
+          </ul>
+
+        </div>
+          </nav>
+      </div>
+    </div><!-- #headerWrap -->
+    <!-- slider -->
+      <div class="slider">
+          <div class="row">
+            <div class="swiper-container col-md-50">
+              <div class="swiper-wrapper">
+                <!-- #1 -->
+                <div class="swiper-slide">
+                  <img src="image/slider-anicro-small.jpg" alt=""  class="d-block d-md-none">
+                  <img src="image/slider-anicro-big.jpg" alt=""  class="d-md-block d-none">
                 </div>
-
+                <!-- #1 -->
+                <!-- #2 -->
+                <div class="swiper-slide">
+                  <img src="image/slider-blue-small.jpeg" alt="" class="d-block d-md-none">
+                  <img src="image/slider-blue-big.jpeg" alt="" class="d-md-block d-none">
+                </div>
+                <!-- #2 -->
+                <!-- #3 -->
+                <div class="swiper-slide">
+                <img src="image/slider-monhunt-small.jpeg" alt="" class="d-block d-md-none">
+                <img src="image/slider-monhunt-big.jpeg" alt="" class="d-md-block d-none">
+                </div>
+                <!-- #3 -->
+                <!-- #4 -->
+                <div class="swiper-slide">
+                <img src="image/slider-code-small.jpg" alt="" class="d-block d-md-none">
+                <img src="image/slider-code-big.jpg" alt="" class="d-md-block d-none">
+                </div>
+                <!-- #4 -->
               </div>
-              <div class="swiper-button-prev d-none d-md-block"></div>
-              <div class="swiper-button-next d-none d-md-block"></div>
+            </div>
+            <div class="swiper-button-prev d-none d-md-block"></div>
+            <div class="swiper-button-next d-none d-md-block"></div>
+          </div> <!--row-->
+      </div>
 
-            </div> <!--row-->
+<div class="banner">
+  <div class="bg-primary mb-5">
+    <div class="container d-flex">
+      <h3 class="adven-title pt-2 flex-grow-1">새로운 소식</h3>
+      <a href="#"><p class="text-white  pt-3 align-self-center">더보기 > </p></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
 
-          </div> <!-- container -->
+      <!--#1-->
+      <div class="col-sm-6 col-lg-4 mb-2">
+        <div class="card">
+
+          <div class="card-img">
+            <img src="image/news1.png" alt="" class="img-fluid w-100">
+          </div>
+
+          <div class="card-body">
+            <div class="card-subtitle text-muted mb-3">뉴스</div>
+            <h4 class="mb-3 card-title">『미토피아』의 새로운 CM 2편이 공개되었습니다!</h4>
+            <p class="card-text">2021.06.01 <br />
+            Nintendo Switch</p>
+          </div>
         </div>
       </div>
+      <!--#1-->
+
+      <!--#2-->
+      <div class="col-sm-6 col-lg-4 mb-2">
+        <div class="card">
+
+          <div class="card-img  ">
+            <img src="image/news2.jpg" alt="" class="img-fluid w-100">
+          </div>
+
+          <div class="card-body">
+            <div class="card-subtitle text-muted mb-3">뉴스</div>
+            <h4 class="mb-3 card-title">『미토피아』의 새로운 CM 2편이 공개되었습니다!</h4>
+            <p class="card-text">2021.06.01 <br />
+            Nintendo Switch</p>
+          </div>
+
+        </div>
+      </div>
+      <!--#2-->
+
+      <!--#3-->
+      <div class="col-md-6 col-lg-4 mb-2 d-none d-md-block">
+        <div class="card">
+
+          <div class="card-img  ">
+            <img src="image/news3.jpg" alt="" class="img-fluid w-100">
+          </div>
+
+          <div class="card-body">
+            <div class="card-subtitle text-muted mb-3">뉴스</div>
+            <h4 class="mb-3 card-title">『미토피아』의 새로운 CM 2편이 공개되었습니다!</h4>
+            <p class="card-text">2021.06.01 <br />
+            Nintendo Switch</p>
+          </div>
+
+        </div>
+      </div>
+      <!--#3-->
+
+
+      <!--#4-->
+      <div class="col-sm-6 col-lg-4 mb-5 d-none d-md-block">
+        <div class="card">
+
+          <div class="card-img">
+            <img src="image/news4.jpg" alt="" class="img-fluid w-100">
+          </div>
+
+          <div class="card-body">
+            <div class="card-subtitle text-muted mb-3">뉴스</div>
+            <h4 class="mb-3 card-title">『미토피아』의 새로운 CM 2편이 공개되었습니다!</h4>
+            <p class="card-text">2021.06.01 <br />
+            Nintendo Switch</p>
+          </div>
+
+        </div>
+      </div>
+      <!--#4-->
+
+      <!--#5-->
+      <div class="col-sm-6 col-lg-4 mb-5">
+        <div class="card">
+
+          <div class="card-img">
+            <img src="image/news5.jpg" alt="" class="img-fluid w-100">
+          </div>
+
+          <div class="card-body">
+            <div class="card-subtitle text-muted mb-3">뉴스</div>
+            <h4 class="mb-3 card-title">『미토피아』의 새로운 CM 2편이 공개되었습니다!</h4>
+            <p class="card-text">2021.06.01 <br />
+            Nintendo Switch</p>
+          </div>
+
+        </div>
+      </div>
+      <!--#5-->
+
+      <!--#6-->
+      <div class="col-sm-6 col-lg-4 mb-5">
+        <div class="card">
+
+          <div class="card-img">
+            <img src="image/news6.jpg" alt="" class="img-fluid w-100">
+          </div>
+
+          <div class="card-body">
+            <div class="card-subtitle text-muted mb-3">뉴스</div>
+            <h4 class="mb-3 card-title">『미토피아』의 새로운 CM 2편이 공개되었습니다!</h4>
+            <p class="card-text">2021.06.01 <br />
+            Nintendo Switch</p>
+          </div>
+
+        </div>
+      </div>
+      <!--#6-->
+
+
+
+
+
+
+
+
+    </div> <!--row-->
+  </div><!--container-->
+</div><!--banner-->
+
+<div class="adven mb-5">
+
+  <div class="bg-warning mb-5">
+    <div class="container d-flex">
+      <h3 class="adven-title pt-2 flex-grow-1">컨텐츠</h3>
+      <p class="text-white  pt-3 align-self-center">더보기 > </p>
     </div>
-    <script>
-      const swiper = new Swiper('.swiper-container', {
-        speed: 400,
-        spaceBetween: 100,
-        loop:true,
-        autoplay:true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
+  </div>
+
+  <div class="container">
+
+    
+    <div class="row my-5 py-5 ">
+			<div class="col-md-6 img-view order-1 order-md-1 mb-5 mb-md-0 align-self-center">
+				<img src="image/banner_main_bottom04.jpg" alt="" class="img-fluid img-3st card-img" >
+			</div>
+			<div class="col-md-6 text-center text-md-left d-flex flex-column justify-content-center order-2 order-md-2">
+				<h4 class="title-2st">Lorem ipsum dolor sit amet.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, pariatur itaque doloremque eligendi, perferendis sint dolorum, odio temporibus ut quaerat sit est iusto. Consectetur corrupti expedita explicabo minima, eaque nemo!</p>
+		</div>
+	  </div>
+
+		<div class="row my-5 py-5">
+			<div class="col-md-6 text-center text-md-left d-flex flex-column justify-content-center order-2 order-md-1">
+				<h4 class="title-3st">Lorem ipsum dolor sit amet.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, pariatur itaque doloremque eligendi, perferendis sint dolorum, odio temporibus ut quaerat sit est iusto. Consectetur corrupti expedita explicabo minima, eaque nemo!</p>
+			</div>
+			<div class="col-md-6 img-view order-1 order-md-2 mb-5 mb-md-0">
+				<img src="image/banner_main_bottom02.jpg" alt="" class="img-fluid img-5st">
+			</div>
+		</div>
+
+    <div class="row my-5 py-5 ">
+			<div class="col-md-6 img-view order-1 order-md-1 mb-5 mb-md-0 align-self-center ">
+				<img src="image/banner_main_bottom03.jpg" alt="" class="img-fluid img-3st" >
+			</div>
+			<div class="col-md-6 text-center text-md-left d-flex flex-column justify-content-center order-2 order-md-2">
+				<h4 class="title-2st">Lorem ipsum dolor sit amet.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, pariatur itaque doloremque eligendi, perferendis sint dolorum, odio temporibus ut quaerat sit est iusto. Consectetur corrupti expedita explicabo minima, eaque nemo!</p>
+        <div class="btn btn-primary col-md-2">
+          NOW
+        </div>
+      </div>
+		</div>
+
+  </div>
+</div>
+
+<div class="bg-success mb-5">
+  <div class="container d-flex">
+    <h3 class="adven-title pt-2 flex-grow-1">소프트웨어</h3>
+    <p class="text-white  pt-3 align-self-center">더보기 > </p>
+  </div>
+  </div>
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (1).jpg" alt="Card image cap">
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>[포켓몬스터] 소...</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 19.11.15</div>
+<br>
+    <div class="card-title text-warning"><h5>￦64,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (2).jpg" alt="Card image cap">
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>모여봐요 동물의...</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 20.03.20</div>
+   <br>
+    <div class="card-title text-warning"><h5>￦64,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (3).jpg" alt="Card image cap">
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>젤다무쌍 대재앙...</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 20.11.20</div>
+<br>
+    <div class="card-title text-warning"><h5>￦64,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (4).jpg" alt="Card image cap">
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>마리오카트 라이...</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 20.03.20</div>
+<br>
+    <div class="card-title text-warning"><h5>￦64,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (5).jpg" alt="Card image cap">
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>슈퍼 마리오 3D...</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 21.02.12</div>
+<br>
+    <div class="card-title text-warning"><h5>￦64,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (6).jpg" alt="Card image cap">
+    
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>링 피트 어드벤처</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 20.10.19</div>
+<br>
+    <div class="card-title text-warning"><h5>￦84,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+     
+  	</div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (7).jpg" alt="Card image cap">
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>포켓몬 스냅</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 21.04.30</div>
+<br>
+    <div class="card-title text-warning"><h5>￦64,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card">
+    <img class="card-img-top" src="image/software (8).jpg" alt="Card image cap">
+    <div class="card-body">
+    <div class="card-title text-left text-primary"><h4>미토피아</h4></div>
+	<div class="text-left card-subtitle text-secondary">발매 21.05.21</div>
+<br>
+    <div class="card-title text-warning"><h5>￦54,800</h5></div>
+    <div class="card-text">
+     Some more card content 
+     </div>
+     </div>
+  </div>
+    </div>
+    <nav aria-label="software" class="ml-auto mr-auto">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#!" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#!">1</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#!">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#!">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#!">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<a href="#">
+<div class="jumbotron jumbotron-fluid text-center m-0">
+    <div class="container">
+      <h2 class="display-6">닌텐도 온라인 스토어</h2>
+      <p class="lead">다운로드 구입 및 전체 소프트웨어 보러가기 ></p>
+    </div>
+</div>
+</a>
+<div class="jumbotron jumbortron-fluid m-0">
+  <div class="container">
+<div class="contact p-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-6 offset-md-3">
+        <h2>CONTACT US</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cum possimus nemo error perferendis alias neque, dolores aut dolorem omnis!</p>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="row d-flex flex-column flex-md-row d-md-none ">
+        <div id="accordion" role="tablist">
+          <div class="">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                  COMPANY
+                </a>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" style="">
+              <div class="card-body">
+                <ul>
+                  <li><a href="*">menu1</a></li>
+                  <li><a href="*">menu2</a></li>
+                  <li><a href="*">menu3</a></li>
+                  <li><a href="*">menu4</a></li>
+                  <li><a href="*">menu5</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
+                  PRODUCT
+                </a>
+              </h5>
+            </div>
+        
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" style="">
+              <div class="card-body">
+                <ul>
+                  <li><a href="*">menu1</a></li>
+                  <li><a href="*">menu2</a></li>
+                  <li><a href="*">menu3</a></li>
+                  <li><a href="*">menu4</a></li>
+                  <li><a href="*">menu5</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
+                SERVICE
+              </a>
+            </h5>
+          </div>
+      
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" style="">
+            <div class="card-body">
+              <ul>
+                <li><a href="*">menu1</a></li>
+                <li><a href="*">menu2</a></li>
+                <li><a href="*">menu3</a></li>
+                <li><a href="*">menu4</a></li>
+                <li><a href="*">menu5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-header" role="tab" id="headingFour">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">
+                COMMUNITY
+              </a>
+            </h5>
+          </div>
+      
+          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" style="">
+            <div class="card-body">
+              <ul>
+                <li><a href="*">menu1</a></li>
+                <li><a href="*">menu2</a></li>
+                <li><a href="*">menu3</a></li>
+                <li><a href="*">menu4</a></li>
+                <li><a href="*">menu5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>      <!-- row -->
+
+<div class="bottomWrap d-none d-md-block mt-3">
+  <div class="row">
+      <div class="col-3 col-md-6 col-lg mb-4 mb-lg-0 ">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="*">menu1</a></li>
+          <li><a href="*">menu2</a></li>
+          <li><a href="*">menu3</a></li>
+          <li><a href="*">menu4</a></li>
+          <li><a href="*">menu5</a></li>
+        </ul>
+      </div>
+      <div class="col-3 col-md-6 col-lg mb-4 mb-lg-0">
+        <h4>PRODUCT</h4>
+        <ul>
+          <li><a href="*">menu1</a></li>
+          <li><a href="*">menu2</a></li>
+          <li><a href="*">menu3</a></li>
+          <li><a href="*">menu4</a></li>
+          <li><a href="*">menu5</a></li>
+        </ul>
+      </div>
+      <div class="col-3 col-md-6 col-lg mb-4 mb-lg-0">
+        <h4>SERVICE</h4>
+        <ul>
+          <li><a href="*">menu1</a></li>
+          <li><a href="*">menu2</a></li>
+          <li><a href="*">menu3</a></li>
+          <li><a href="*">menu4</a></li>
+          <li><a href="*">menu5</a></li>
+        </ul>
+      </div>
+      <div class="col-3 col-md-6 col-lg mb-4 mb-lg-0">
+        <h4>COMMUNITY</h4>
+        <ul>
+          <li><a href="*">menu1</a></li>
+          <li><a href="*">menu2</a></li>
+          <li><a href="*">menu3</a></li>
+          <li><a href="*">menu4</a></li>
+          <li><a href="*">menu5</a></li>
+        </ul>
+      </div>
+    </div>
+</div> <!-- row -->
+    <hr class=" d-none d-md-block">
+    <div class="row mb-3 mt-3">
+      <div class="col-md-6">
+        <ul class="d-flex justify-content-center justify-content-md-start">
+          <li><a href="#!">Privacy</a></li>
+          <li class="px-3">/</li>
+          <li><a href="#!">Teams</a></li>
+          <li class="px-3">/</li>
+          <li><a href="#!">Site map</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="d-flex justify-content-center justify-content-md-end">
+          <li class="px-3">
+            <a href="#!"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="px-3">
+            <a href="#!"><i class="fab fa-google"></i></a>
+          </li>
+          <li class="px-3">
+            <a href="#!"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="px-3">
+            <a href="#!"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- row -->
+    <div class="row pb-5">
+      <div class="col-md-8 offset-md-2 text-center">
+        <p class="small">Lorem ipsum dolor sit amet.</p>
+        <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt reiciendis quas rerum minus quae quis voluptas quasi facilis eos! Blanditiis fuga iure itaque praesentium quibusdam, magnam debitis inventore amet.</p>
+      </div>
+    </div>
+
+
+  </div> <!-- container -->
+</footer>
+
+
+
+
+
+
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100,
+    loop:true,
+    autoplay:true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
+
+
+
+</script>
   </body>
 </html>
