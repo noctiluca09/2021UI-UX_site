@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>EDIYA COFFEE</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="js/jquery.bxslider.js"></script>
+<!--	ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+	<script>
+		$(document).ready(function(){
+			$(".toggleMenu").click(function(){
+				const toggle = $(".toggleMenu").attr("class");
+
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+				}else{
+					$(".toggleMenu").removeClass("change");}
+
+				if(toggle == "toggleMenu"){
+					$("#main_menu").css("right",0);
+				}else{
+					$("#main_menu").css("right","-400px");
+				};
+			});
+			$(".tab>li").click(function(){
+				let t = $(this).index();
+				$(".tab>li").removeClass("active");
+				$(this).addClass("active");
+				$(".boxWrap>div").hide().eq(t).fadeIn();
+
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<header>
+		<div class="hWrap clearfix">
+			<div id="headerTop" class="clearfix">
+				<a href="index.html"><h1 class="logo">EDIYA COFFEE</h1></a>
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li><a href="#">메뉴</a></li>
+						<li><a href="#">이디야멤버스</a></li>
+						<li><a href="sub_gift.html">기프트카드</a></li>
+						<li><a href="#">이디야커피랩</a></li>
+						<li><a href="#">이디야컬쳐랩</a></li>
+						<li><a href="#">이디야 소식</a></li>
+						<select name="laguage" style="margin-top:8px">
+							<option value="한국어" selected="selected">한국어</option>
+							<option value="English">English</option>
+						</select>
+					</ul>
+				</nav>
+				<div class="toggleMenu">
+			    	<div class="bar1 bar"></div>
+  					<div class="bar2 bar"></div>
+  					<div class="bar3 bar"></div>
+				</div> <!-- toggleMenu -->
+			</div> <!-- headerTop -->
+		</div> <!-- hWrap -->
+	</header>
+ 	<section class="titleMenu">
+ 		<div class="titleWrap">
+ 		<div class="title_txt">
+ 		<h2>메뉴</h2>
+        <p><span>Everyone</span>누구에게나</p>
+        <p><span>Anytime</span>언제 어디서나</p>
+        <p><span>Sincerely</span>진심을 담아</p>
+ 		</div>
+ 		<ul class="tab clearfix">
+ 			<li class="active">기프트카드 소개</li>
+ 			<li>잔액조회</li>
+ 			<li>분실신고/환불신청</li>
+ 			<li>FAQ</li>
+ 		</ul>
+ 		</div>
+ 	</section>
+<div class="boxWrap ">
+ 			<div><img src="images/sub_gift/gift01.png" alt="" class="boxPC">
+ 			<img src="images/sub_gift/gift-mobile01.png" alt="" class="boxM">
+ 			</div>
+ 			<div><img src="images/sub_gift/gift02.png" alt="" class="boxPC">
+ 			<img src="images/sub_gift/gift-mobile02.png" alt="" class="boxM">
+ 			</div>
+ 			<div><img src="images/sub_gift/gift03.png" alt="" class="boxPC">
+ 			<img src="images/sub_gift/gift-mobile03.png" alt="" class="boxM">
+ 			</div>
+ 			<div><img src="images/sub_gift/gift04.png" alt="" class="boxPC">
+ 			<img src="images/sub_gift/gift-mobile04.png" alt="" class="boxM">
+ 			</div>
+
+ 		</div>
+	<footer>
+		<div class="footWrap">
+			<a href="#"><h1>logo</h1></a>
+			<div class="fContent">
+				<ul class="clearfix">
+					<li class="active" ><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">멤버스 이용약관</a></li>
+					<li><a href="#">가맹 안내</a></li>
+					<li><a href="#">대량쿠폰구매</a></li>
+					<li><a href="#">채용안내</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">점주의 방</a></li>
+				</ul>
+				<p>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17) | TEL : 02-543-6467 | FAX : 02-543-7191
+				<br>
+				사업자등록번호 : 107-86-16302 | 통신판매업 신고 : 강남 제 002519호 | 대표이사 : 문창기
+				<br><br>
+				&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

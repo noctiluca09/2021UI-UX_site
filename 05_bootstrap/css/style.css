@@ -30,9 +30,9 @@ a .jumbotron-fluid {
 }
 a .jumbotron { color: #fff; display: block;position: relative;}
 
-.jumbotron {
-	background:url(../image/img_switch_device_parent01.jpg)no-repeat;
-	background-color: #f3ece2;
-	background-size:300px;
-	background-position: 15%;
+.jumbotron{
+	background:url(../image/img01.jpg)no-repeat;
+  background-color: white;
+	background-size:cover;
+	background-position: 30% 30%;
 }
