@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -21,12 +21,12 @@
 		$(document).ready(function(){
 			$(".toggleMenu").click(function(){
 				const toggle = $(".toggleMenu").attr("class");
-				
+
 				if(toggle == "toggleMenu"){
-					$(".toggleMenu").addClass("change");					
+					$(".toggleMenu").addClass("change");
 				}else{
 					$(".toggleMenu").removeClass("change");}
-				
+
 				if(toggle == "toggleMenu"){
 					$("#main_menu").css("right",0);
 				}else{
@@ -38,9 +38,9 @@
 				$(".tab>li").removeClass("active");
 				$(this).addClass("active");
 				$(".boxWrap>div").hide().eq(t).fadeIn();
-				
+
 			});
-		});			    
+		});
 
 	</script>
 </head>
@@ -51,8 +51,8 @@
 				<a href="index.html"><h1 class="logo">EDIYA COFFEE</h1></a>
 				<nav id="main_menu">
 					<ul class="clearfix">
-						<li><a href="#">메뉴</a></li>
-						<li><a href="#">이디야멤버스</a></li>
+						<li><a href="sub_menu.html">메뉴</a></li>
+						<li><a href="sub_members.html">이디야멤버스</a></li>
 						<li><a href="#">기프트카드</a></li>
 						<li><a href="#">이디야커피랩</a></li>
 						<li><a href="#">이디야컬쳐랩</a></li>
@@ -100,7 +100,7 @@
  			<div><img src="images/sub_gift/gift04.png" alt="" class="boxPC">
  			<img src="images/sub_gift/gift-mobile04.png" alt="" class="boxM">
  			</div>
- 			
+
  		</div>
 	<footer>
 		<div class="footWrap">

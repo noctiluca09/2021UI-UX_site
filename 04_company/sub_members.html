@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -21,12 +21,12 @@
 		$(document).ready(function(){
 			$(".toggleMenu").click(function(){
 				const toggle = $(".toggleMenu").attr("class");
-				
+
 				if(toggle == "toggleMenu"){
-					$(".toggleMenu").addClass("change");					
+					$(".toggleMenu").addClass("change");
 				}else{
 					$(".toggleMenu").removeClass("change");}
-				
+
 				if(toggle == "toggleMenu"){
 					$("#main_menu").css("right",0);
 				}else{
@@ -38,9 +38,9 @@
 				$(".tab>li").removeClass("active");
 				$(this).addClass("active");
 				$(".boxWrap>div").hide().eq(t).fadeIn();
-				
+
 			});
-		});			    
+		});
 
 	</script>
 </head>
@@ -51,9 +51,9 @@
 				<a href="index.html"><h1 class="logo">EDIYA COFFEE</h1></a>
 				<nav id="main_menu">
 					<ul class="clearfix">
-						<li><a href="#">메뉴</a></li>
+						<li><a href="sub_menu.html">메뉴</a></li>
 						<li><a href="#">이디야멤버스</a></li>
-						<li><a href="#">기프트카드</a></li>
+						<li><a href="sub_gift.html">기프트카드</a></li>
 						<li><a href="#">이디야커피랩</a></li>
 						<li><a href="#">이디야컬쳐랩</a></li>
 						<li><a href="#">이디야 소식</a></li>
@@ -74,33 +74,32 @@
  	<section class="titleMenu">
  		<div class="titleWrap">
  		<div class="title_txt">
- 		<h2>이디야 기프트카드</h2>
-        <p><span>Everyone</span>누구에게나</p>
-        <p><span>Anytime</span>언제 어디서나</p>
-        <p><span>Sincerely</span>진심을 담아</p>
+ 		<h2>이디야멤버스</h2>
+        <p>이디야커피의 특별한 멤버십 서비스를 소개합니다.</p>
+        <p>스탬프 적립, FREE쿠폰, 이벤트 혜택 등 지금 이디야멤버스에서 만나보세요.</p>
  		</div>
  		<ul class="tab clearfix">
- 			<li class="active">기프트카드 소개</li>
- 			<li>잔액조회</li>
- 			<li>분실신고/환불신청</li>
+ 			<li class="active">이디야멤버스</li>
+ 			<li>이디야카드</li>
+ 			<li>이디야오더</li>
  			<li>FAQ</li>
  		</ul>
  		</div>
  	</section>
 <div class="boxWrap ">
- 			<div><img src="images/sub_gift/gift01.png" alt="" class="boxPC">
- 			<img src="images/sub_gift/gift-mobile01.png" alt="" class="boxM">
+ 			<div><img src="images/sub_members/members01.png" alt="" class="boxPC">
+ 			<img src="images/sub_members/members-mobile01.png" alt="" class="boxM">
  			</div>
- 			<div><img src="images/sub_gift/gift02.png" alt="" class="boxPC">
- 			<img src="images/sub_gift/gift-mobile02.png" alt="" class="boxM">
+ 			<div><img src="images/sub_members/members02.png" alt="" class="boxPC">
+ 			<img src="images/sub_members/members-mobile02.png" alt="" class="boxM">
  			</div>
- 			<div><img src="images/sub_gift/gift03.png" alt="" class="boxPC">
- 			<img src="images/sub_gift/gift-mobile03.png" alt="" class="boxM">
+ 			<div><img src="images/sub_members/members03.png" alt="" class="boxPC">
+ 			<img src="images/sub_members/members-mobile03.png" alt="" class="boxM">
  			</div>
- 			<div><img src="images/sub_gift/gift04.png" alt="" class="boxPC">
- 			<img src="images/sub_gift/gift-mobile04.png" alt="" class="boxM">
+ 			<div><img src="images/sub_members/members04.png" alt="" class="boxPC">
+ 			<img src="images/sub_members/members-mobile04.png" alt="" class="boxM">
  			</div>
- 			
+
  		</div>
 	<footer>
 		<div class="footWrap">

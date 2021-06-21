@@ -96,7 +96,7 @@ header {
 
 .toggleMenu .bar {
 	width: 34px;
-	height: 3px;
+	height: 6px;
 	background: #000;
 	border-radius: 3px;
 	position: absolute;
