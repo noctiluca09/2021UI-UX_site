@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0,
+    minimum-scale=1.0,
+    maximum-scale=1.0,
+    user-scalable=no">
+    <title>SCARLET</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="image/favicon/scarlet-touch-icon.png">
+    <script src="js/jquery-3.5.1.min.js"></script> 
+        <script> 
+        jQuery(function($){
+            $('.menu-toggle-btn').click(function(){
+                $('#gnb').stop().slideToggle('fast');
+            });
+        });
+        </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="cfixed">
+            <h1 class="logo"><a href="index.html">SCARLET</a></h1>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">WE ARE</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+        <article id="slider">
+            <img src="image/p-images/slide01.jpg" alt="Main Image">
+        </article>
+        <section id="content">
+           <section class="display-section">
+               <div class="container">
+                   <h2 class="sec-tit">WE ARE</h2>
+                   <p class="desc">Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+               </div>
+           </section>
+           <section class="promotion-section">
+               <div class="container">
+                   <ul class="promo-list">
+                     <li><a href="#">
+                             <img src="image/s-images/promo01.png" alt="">
+                             <h3>HOME</h3>
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                         </a></li>
+                     <li><a href="#">
+                             <img src="image/s-images/promo02.png" alt="">
+                             <h3>WE ARE</h3>
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                         </a></li>
+                     <li><a href="#">
+                             <img src="image/s-images/promo03.png" alt="">
+                             <h3>PRODUCT</h3>
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                         </a></li>
+                     <li><a href="#">
+                             <img src="image/s-images/promo04.png" alt="">
+                             <h3>BLOG</h3>
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                         </a></li>
+                   </ul>
+               </div>
+           </section>
+           <hr class="divider">
+           <section class="product-section">
+               <h2 class="sec-tit"></h2>
+               <ul class="pro-list">
+                   <li><a href="#">
+                           <div class="info">
+                               <h3>Fashion</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work01.jpg" alt="">
+                       </a></li>
+                        <li><a href="#">
+                           <div class="info">
+                               <h3>Accessory</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work02.jpg" alt="">
+                       </a></li>
+                        <li><a href="#">
+                           <div class="info">
+                               <h3>Cosmetic</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work03.jpg" alt="">
+                       </a></li>
+                        <li><a href="#">
+                           <div class="info">
+                               <h3>Shoes</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work04.jpg" alt="">
+                       </a></li>
+                        <li><a href="#">
+                           <div class="info">
+                               <h3>Perfume</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work05.jpg" alt="">
+                       </a></li>
+                        <li><a href="#">
+                           <div class="info">
+                               <h3>Watch</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work06.jpg" alt="">
+                       </a></li>
+                        <li><a href="#">
+                           <div class="info">
+                               <h3>Skin Care</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work07.jpg" alt="">
+                       </a></li>
+                        <li><a href="#">
+                           <div class="info">
+                               <h3>Leather Works</h3>
+                               <span>WEB/PRINT</span>
+                           </div>
+                           <img src="image/p-images/work08.jpg" alt="">
+                       </a></li>
+               </ul>
+           </section>
+           <hr class="m-divider">
+           <section class="blog-section">
+               <div class="container">
+                   <h2 class="sec-tit">BLOG</h2>
+                   <ul class="blog-list">
+                     <li><a href="#"><img src="image/p-images/blog01.jpg" alt=""></a>
+                     <time datetime>MAR 02,2021</time>
+                     <a href="#">
+                         <h3>Ipsum is simply dummy text of the printing</h3>
+                         </a>
+                     </li>
+                     <li><a href="#"><img src="image/p-images/blog02.jpg" alt=""></a>
+                     <time datetime>MAR 02,2021</time>
+                     <a href="#">
+                         <h3>Ipsum is simply dummy text of the printing</h3>
+                         </a>
+                     </li>
+                     <li><a href="#"><img src="image/p-images/blog03.jpg" alt=""></a>
+                     <time datetime>MAR 02,2021</time>
+                     <a href="#">
+                         <h3>Ipsum is simply dummy text of the printing</h3>
+                         </a>
+                     </li>
+                   </ul>
+               </div>
+           </section>   
+           <section class="contact-section">
+               <div class="container">
+                   <h2 class="sec-tit">CONTACT</h2>
+                   <div class="form-box">
+                       <form action="ab.php" method="post">
+                           <fieldset>
+                               <legend class="blind">CONTACT ** US </legend>
+                                   <div class="form">
+                                       <label for="name" class="blind">name</label>
+                                       <input type="text" id="name" placeholder="Name">
+                                       <label for="phone" class="blind">phone</label>
+                                       <input type="text" id="phone" placeholder="Phone">
+                                       <label for="email" class="blind">email</label>
+                                       <input type="text" id="email" placeholder="Email">
+                                   </div>
+                                   <div class="textarea">
+                                       <label for="message" class="blind">message</label>
+                                       <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                   </div>
+                           </fieldset>
+                           <div class="send-btn">
+                           <button>SEND MESSAGE</button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           </section>
+        </section>
+        <footer id="footer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2055548356175!2d126.87679691559447!3d37.5030697798099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9fc70bce5993%3A0xdd5b5b33e55b538e!2z7ZWY7J2066-465SU7Ja07Lu07ZOo7YSw7ZWZ7JuQ6rWs66Gc7Lqg7Y287Iqk!5e0!3m2!1sko!2skr!4v1614841405649!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" frameborder="0"></iframe>
+            <p class="copyright">SCARLET</p>          
+        </footer>
+    </div> 
+</body>
+</html>
+            

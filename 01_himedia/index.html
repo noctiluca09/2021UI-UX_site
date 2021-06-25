@@ -4,9 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
-</head>
+	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="js/jquery.bxslider.js" charset="utf-8"></script>
 
+
+<script>
+	$(document).ready(function() {
+		$(".slider").bxSlider({
+			auto: true,
+			pager: false,
+			controls: false
+		});
+	});
+
+</script>
+</head>
 <body>
 		<header id="header">
 			<div class="top">
@@ -22,7 +36,7 @@
 				</nav>
 			</div>
 			<div class="logo">
-				<h1>하이미디어</h1>
+				<h1>ECO 에너지 주식회사</h1>
 			</div>
 			<div class="menuWrap">
 				<nav class="menu">
@@ -37,12 +51,16 @@
 				</nav> 		<!--menu-end-->
 			</div>
 		</header>		<!--header-end-->
-	<div id="slider">
-		<div class="visual">
+	<ul class="slider">
+		<li class="visual">
 				<img src="img/slide_Text.png" alt="text" class="v-text">
 				<img src="img/v_Bulb.png" alt="bulb" class="v-bulb">
-		</div> 		<!--visual-end-->
-	</div> 	<!--slider-end-->
+		</li>
+		<li class="visual">
+				<img src="img/slide_Text.png" alt="text" class="v-text">
+				<img src="img/v_Bulb.png" alt="bulb" class="v-bulb">
+		</li>
+	</ul> 	<!--slider-end-->
 	<section id="middle">
 		<div class="icon">
 			<ul>
@@ -168,8 +186,8 @@
 		</div>
 		<div class="f-contact">
 		<div class="t-box">
-			<h2>하이미디어</h2>
-			<p>하이미디어 <br>
+			<h2 class="logo2">ECO 에너지 주식회사</h2>
+			<p>ECO 에너지 주식회사 <br>
 대표 : 홍길동     사업자등록번호 : 000-00-00000     주소 : 서울시 영등포구 여의도동 1234567<br>
 TEL : 02-0000-0000     FAX : 02-0000-0000     E-mail : abcde@abcde.com <br>
 Copyright(c)2015. himedia. All right reserved.</p>
