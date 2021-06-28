@@ -5,25 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fullpage</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
     <script>
         $(document).ready(function(){
             $("#fullpage").fullpage({
                 menu:".topMenu",
                 anchors:['m1st','m2nd','m3rd','m4th','m5th',],
                 navigation:true,
-                navigationTooltips: ['HOME', 'PRODUCT', 'COMMUNITY', 'BOARD','CONTACT'],
+                navigationTooltips: ['PROFILE', 'SKILL', 'COMMUNITY', 'PORTFOLIO','COMPOSITION'],
 		        showActiveTooltip: true,
             responsiveWidth: 1000,
             })
+            const btns = $(".composition .btn-group button");
+            btns.click(function(){
+              let i = $(this).index();
+              btns.removeClass("active");
+              btns.eq(i).addClass("active");
+
+              let selector = btns.eq(i).attr("data-filter");
+              console.log(selector);
+
+              $(".composition .view").isotope({
+                filter:selector
+              })
+            });
+
+            window.onload = function(){
+              $(".composition .btn-group #btn").trigger("click");
+            }
+
+            $(".view .popup_link").magnificPopup({type:"image"});
         })
+
     </script>
     <style>
+    :root{
+      --primary-color-1:#4458cc;
+      --primary-color-2:#854fee;
+      --bgcolor1:#efefef;
+      --bgcolor2:#f0f0f0;
+      --gradient-color-1:linear-gradient(90deg,#4458cc,#854fee);
+      --shadow-color:0 10px 30px rgba(118,85,225,0.3);
+      --box-shadow:0 10px 20px rgba(57,56,61,0.3);
+    }
+
+        .button.primary-button{
+          box-shadow:var(--box-shadow);
+          background:var(--gradient-color-1);color:white
+        }
+        .button.secondary-button{
+          box-shadow:var(--box-shadow);
+        }
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+        h2.title:after
+        { content:"";display: block;width: 200px;height: 2px;
+          background:var(--primary-color-1);margin: 10px auto;
+        }
+        .portfolio .card img{height: 200px;}
+        .portfolio .card{background:var(--bgcolor2);border:0 none;transition:0.3s}
+        .portfolio .card:hover{transform:scale(1.1);box-shadow:var(--box-shadow)}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+        .composition .btn-group button{
+          background:none;border:0 none;font-weight:bold;
+          outline:0;font-size: 1.1rem;
+        }
+        .composition .btn-group button + button{margin-left:30px;}
+        .composition .btn-group button.active{color:var(--primary-color-1)}
+        .composition .element-item img{border-radius:10px;transition:0.3s;width: 250px;}
+        .composition .element-item img:hover{box-shadow:var(--box-shadow)}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+        .section.page3 .sectWrap {width: 80%;}
+        .section.page3 .sectWrap .slide {transform: translateY(-150px);}
+        .section.page3 .sectWrap .slide img {margin-left: 100px;}
         .section{
             background-position: center;
             background-repeat: no-repeat;
@@ -34,23 +104,22 @@
         .section.page3{background-image: url(images/bg3.jpg);}
         .section.page4{background-image: url(images/bg4.jpg);}
         .section.page5{background:darkcyan;}
-
-        .section .sectWrap {width: 1200px; margin: 0 auto;position: relative;}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+        .section .sectWrap {width: 1200px; height: 900px;padding-top: 60px;
+          margin: auto auto;position: relative;}
         .section .sectWrap .hr {width: 400px; height: 1px; background: #000;}
         .section .sectWrap ul {width: 400px;float: right;}
         .section .sectWrap .txtWrap {padding: 15px 0;}
-        .section .sectWrap h2 {position: absolute;top: -70px; color: #fff;}
+        .section .sectWrap h2 {position:relative; color: #fff;}
         #navTop{
             position: fixed;z-index:1;background: #fff;
-            width: 100%;
         }
         .navbar li{transition:0.3s;border-bottom: 5px solid transparent;}
-        .navbar li.active{border-bottom: 5px solid #000;}
+        .navbar li.active{border-bottom: 5px solid var(--primary-color-1);}
         #fp-nav.right{right:10px;}
         .fp-tooltip.right{right:20px}
-
-       
     </style>
+
 </head>
 <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-md-0">
@@ -61,19 +130,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav topMenu ml-auto">
               <li class="nav-item"  data-menuanchor="m1st">
-                <a class="nav-link" href="#m1st">Home </a>
+                <a class="nav-link" href="#m1st">PROFILE </a>
               </li>
               <li class="nav-item" data-menuanchor="m2nd">
-                <a class="nav-link" href="#m2nd">product</a>
+                <a class="nav-link" href="#m2nd">SKILL</a>
               </li>
               <li class="nav-item" data-menuanchor="m3rd">
                 <a class="nav-link" href="#m3rd">community</a>
               </li>
               <li class="nav-item" data-menuanchor="m4th">
-                  <a class="nav-link" href="#m4th">board</a>
+                  <a class="nav-link" href="#m4th">PORTFOLIO</a>
                 </li>
               <li class="nav-item" data-menuanchor="m5th">
-                  <a class="nav-link" href="#m5th">contact</a>
+                  <a class="nav-link" href="#m5th">COMPOSITION</a>
                 </li>
 
             </ul>
@@ -82,7 +151,7 @@
     <div id="fullpage">
         <div class="section page1" data-anchor="m1st">
             <div class="sectWrap">
-            <h2> HOME </h2>
+            <h2 class="title text-center pb-4"> PROFILE </h2>
             <img src="./images/slider-blue-small.jpeg" alt="">
             <ul>
                 <h1>Lorem, ipsum dolor.</h1>
@@ -101,50 +170,146 @@
                     <h4>Lorem ipsum dolor sit amet.</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quod, voluptates et
                         eligendi ducimus nostrum in veritatis est sequi possimus blanditiis architecto?</p>
-                </li>
-				</div>
+                  </li>
+		            </div>
             </ul>
             </div>
         </div>
         <div class="section page2" data-anchor="m2nd">
-            <div class="sectWrap">
-                <h2> PRODUCT </h2>
+            <div class="sectWrap skill">
+                <h2 class="title text-center pb-4"> SKILL </h2>
                 <img src="./images/slider-blue-small.jpeg" alt="">
                 </div>
         </div>
         <div class="section page3" data-anchor="m3rd">
             <div class="sectWrap">
-                <h2> COMMUNITY </h2>
+              <!-- community start -->
+              <div class="community">
+                <h2 class="title text-center pt-5"> COMMUNITY </h2>
                 <div class="slide">
-                <img src="./images/slider-blue-small.jpeg" alt="">
+                  <img src="./images/slider-blue-small.jpeg" alt="">
                 </div>
                 <div class="slide">
                     <img src="./images/slider-monhunt-small.jpeg" alt="">
-                    </div>
+                </div>
+              </div>
             </div>
         </div>
         <div class="section page4" data-anchor="m4th">
             <div class="sectWrap">
-                <h2> BOARD </h2>
-                <img src="./images/slider-blue-small.jpeg" alt="">
+              <!-- portfolio start -->
+              <div class="portfolio">
+                <div class="container py-5">
+                  <h2 class="title text-center">PORTFOLIO</h2>
+                  <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, aspernatur!</p>
+
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3 text-center mb-5 mb-lg-0">
+                      <div class="card p-3">
+                        <img src="images/destaque1.svg" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                          <h4 class="card-title">Lorem ipsum.</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, modi.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center mb-5 mb-lg-0">
+                      <div class="card p-3">
+                        <img src="images/destaque2.svg" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                          <h4 class="card-title">Lorem ipsum.</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, modi.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center mb-5 mb-lg-0">
+                      <div class="card p-3">
+                        <img src="images/destaque3.svg" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                          <h4 class="card-title">Lorem ipsum.</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, modi.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center">
+                      <div class="card p-3">
+                        <img src="images/destaque4.svg" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                          <h4 class="card-title">Lorem ipsum.</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, modi.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <!-- portfolio end -->
+            </div>
         </div>
         <div class="section page5" data-anchor="m5th">
             <div class="sectWrap">
-                <h2> CONTACT </h2>
-                <img src="./images/slider-blue-small.jpeg" alt="">
+              <!-- composition start -->
+              <div class="composition mb-5">
+                <div class="container">
+                  <h2 class="title text-center">COMPOSITION</h2>
+                  <div class="btn-group mb-3">
+                    <button data-filter="" class="active" id="btn">ALL</button>
+                    <button data-filter=".web">WEBSITE</button>
+                    <button data-filter=".photo">PHOTOSHOP</button>
+                    <button data-filter=".illu">ILLUST</button>
+                  </div>
+                  <div class="row view ">
+                    <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="images/servicos/1.jpg" class="popup_link">
+                        <img src="images/servicos/1.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="images/servicos/2.jpg" class="popup_link">
+                        <img src="images/servicos/2.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item photo mb-3">
+                      <a href="images/servicos/3.jpg" class="popup_link">
+                        <img src="images/servicos/3.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="images/servicos/4.jpg" class="popup_link">
+                        <img src="images/servicos/4.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item photo mb-3">
+                      <a href="images/servicos/5.jpg" class="popup_link">
+                        <img src="images/servicos/5.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item illu mb-3">
+                      <a href="images/servicos/6.jpg" class="popup_link">
+                        <img src="images/servicos/6.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="images/servicos/7.jpg" class="popup_link">
+                        <img src="images/servicos/7.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item illu mb-3">
+                      <a href="images/servicos/8.jpg" class="popup_link">
+                        <img src="images/servicos/8.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-6 col-lg-3 element-item photo mb-3">
+                      <a href="images/servicos/9.jpg" class="popup_link">
+                        <img src="images/servicos/9.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <!-- composition end -->
+            </div>
         </div>
     </div>
-    <nav id="footer">
-        <h2>logo</h2>
-        <ul>
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-            <li>menu4</li>
-        </ul>
-    </nav>
-	</div>
 </body>
 </html>
