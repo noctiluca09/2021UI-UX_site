@@ -22,6 +22,4 @@
  <a href="https://noctiluca09.github.io/2021UI-UX_site/05_bootstrap">https://noctiluca09.github.io/2021UI-UX_site/05_bootstrap</a>
  <br>
  <br>
-6. about me (by fullpage.js)<br>
- <a href="https://noctiluca09.github.io/2021UI-UX_site/06_fullpage">https://noctiluca09.github.io/2021UI-UX_site/06_fullpage</a> <br>
- <br>
+
